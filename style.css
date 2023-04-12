@@ -1,0 +1,177 @@
+* {
+  text-align: center;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.main {
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 200px 0;
+  margin: auto;
+}
+.left-side {
+  padding: 25px 60px;
+  border-radius: 25px;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  display: inline-block;
+  width: 15%;
+  box-shadow: 0px 31px 26px -18px rgba(0, 0, 0, 0.22);
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.left-side h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: hsl(221, 100%, 96%);
+}
+.circle {
+  display: flex;
+  padding: 30px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  position: relative;
+  color: hsl(241, 100%, 89%);
+  line-height: 65px;
+}
+
+.circle span {
+  color: white;
+  position: relative;
+  top: 40px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.great {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.paragraph {
+  color: hsl(241, 100%, 89%);
+  width: 220px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.right-side {
+  font-family: "Hanken Grotesk", sans-serif;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 0px 31px 26px -18px rgba(0, 0, 0, 0.22);
+  display: inline-block;
+  width: 25%;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+}
+
+.right-side h2 {
+  padding-top: 50px;
+  text-align: left;
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+  height: 50%;
+}
+
+.right-side p {
+  text-align: left;
+  font-weight: 700;
+  font-size: 17px;
+  background-color: lightcoral;
+  padding: 15px 7px;
+  border-radius: 9px;
+}
+.stats {
+  position: absolute;
+  right: 50px;
+  color: black;
+}
+.light-100 {
+  font-weight: 100;
+  color: hsl(224, 30%, 27%);
+}
+
+.fa-solid {
+  margin: 0 20px;
+}
+
+.right-side .reaction {
+  background-color: rgb(255, 246, 245);
+  color: rgb(198, 113, 110);
+}
+
+.right-side .memory {
+  background-color: rgb(255, 251, 242);
+  color: rgb(230, 179, 72);
+}
+
+.right-side .verbal {
+  background-color: rgb(242, 251, 250);
+  color: rgb(96, 206, 177);
+}
+
+.right-side .visual {
+  background-color: rgb(243, 243, 253);
+  color: rgb(19, 30, 138);
+}
+
+button {
+  background: linear-gradient(
+    to bottom,
+    hsl(224, 30%, 27%),
+    hsl(224, 30%, 27%)
+  );
+  font-size: 20px;
+  color: aliceblue;
+  padding: 15px 120px;
+  border-radius: 60px;
+  border-style: none;
+  cursor: pointer;
+  margin: 20px 0 90px;
+}
+
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+@media (max-width: 768px) {
+  /* adjust breakpoint as needed */
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side {
+    order: 1;
+  }
+
+  .right-side {
+    order: 2;
+  }
+}
